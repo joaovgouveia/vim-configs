@@ -1,0 +1,36 @@
+" General
+set shiftwidth=4 smarttab
+set expandtab                   
+set number
+set nobackup
+set showmatch
+set hlsearch
+set history=256
+set showcmd
+
+" Statusline
+set laststatus=2
+set statusline=%F       " Path to the file
+set statusline+=\       " Separator
+set statusline+=%y      " Filetype of the file
+set statusline+=\ %l    " Current line
+set statusline+=/       " Separator
+set statusline+=%L      " Total lines
+set statusline+=\ %c    " Current column
+
+" Tabline
+set showtabline=2
+
+" Tabline / Statusline appearence
+hi TabLineFill     term=bold cterm=bold ctermbg=Green ctermfg=Blue
+hi TabLineSel      ctermbg=DarkGreen ctermfg=LightGrey
+hi StatusLineFill  term=bold cterm=bold ctermbg=DarkGreen ctermfg=Blue
+hi StatusLineSel   ctermbg=DarkGreen ctermfg=LightGrey
+
+" Line number column apparence
+highlight LineNr ctermfg=237 ctermbg=256
+
+" Other
+filetype indent on
+syntax on
+set mouse=a 
